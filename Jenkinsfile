@@ -1,5 +1,5 @@
  @Library("shared_library") _
-    fine {
+    file {
         projectName = "Project1"
         serverDomain = "Project1 Server Domain"
     }
