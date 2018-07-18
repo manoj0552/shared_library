@@ -1,7 +1,7 @@
 def call(body) {
 
         def config = [:]
-        body.resloveStrategy = closure.DELEGATE_FIRST
+        body.resolveStrategy = closure.DELEGATE_FIRST
         body.delegate = config
         body()
 
