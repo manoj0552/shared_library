@@ -1,5 +1,5 @@
 
-call(body){
+def call (body) {
   def config = [:]
   body resloveStrategy=Closer.DELEGATE_FIRST
   body.delegate = config
