@@ -1,5 +1,5 @@
  @Library("shared_library") _
-    standardPipeline {
+    fine {
         projectName = "Project1"
         serverDomain = "Project1 Server Domain"
     }
