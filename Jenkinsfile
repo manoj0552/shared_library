@@ -4,6 +4,6 @@
         serverDomain = "Project1 Server Domain"
     }
 
-file {
+file2 {
   projectName="ewallet"
 }
