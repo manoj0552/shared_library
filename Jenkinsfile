@@ -1,4 +1,4 @@
  @Library("shared_library") _
-    sampleProjectPipeline{
-
+    sampleProjectPipeline {
+             jvm="java8"
     }
