@@ -2,7 +2,7 @@
 node{
     cleanWs()
     }
-    sampleProjectPipeline {
+    samplePipeline {
              jvm = "java8"
 
     }
