@@ -5,5 +5,5 @@
     }
 
 file2 {
-  projectName="ewallet"
+  projectName = "ewallet"
 }
