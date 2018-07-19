@@ -22,7 +22,7 @@ def call(body){
           sh "echo $pwd"
 
            withAWS(credentials:'amazon'){
-           s3Upload(file:'helloworld.war',bucket:'warfiles-sample',path:'C:\Users\manoj\.jenkins\workspace\pipeline-code\shared_library\share_Pipeline\target\helloworld.war')
+           s3Upload(file:'helloworld.war',bucket:'warfiles-sample',path:'/C/Users/manoj/.jenkins/workspace/pipeline-code/shared_library/share_Pipeline/target/helloworld.war')
 
            }
           }
