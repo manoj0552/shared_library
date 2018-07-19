@@ -19,10 +19,10 @@ def call(body){
 
           }
           stage('s3_upload'){
-          sh "cat ./target/helloworld.war"
+
 
            withAWS(credentials:'amazon'){
-           s3Upload(file:'helloworld.war',bucket:'warfiles-sample',path:'./target/helloworld.war')
+           s3Upload(file:'./target/helloworld.war',bucket:'warfiles-sample',path:'helloworld.war')
 
            }
           }
