@@ -20,7 +20,7 @@ def call(body){
           }
           stage('s3_upload'){
           sh pwd
-           withAWS(credentials:'amazon')
+           withAWS(credentials:'amazon'){
            s3Upload(file:'helloworld.war',bucket:'warfiles-sample',path:'./target/helloworld.war')
 
           }
