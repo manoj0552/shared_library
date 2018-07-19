@@ -19,9 +19,10 @@ def call(body){
 
           }
           stage('s3_upload'){
+          sh pwd
            withAWS(credentials:'AKIAJ7D5XIXGBK2GHWDA')
-           s3Upload(file:'helloworld.war',bucket:'warfiles-sample',path:'.\pipeline-code\shared_library\share_Pipeline\target\helloworld.war')
-              sh pwd
+           s3Upload(file:'helloworld.war',bucket:'warfiles-sample',path:'./pipeline-code/shared_library/share_Pipeline/target/helloworld.war')
+
           }
 
 
