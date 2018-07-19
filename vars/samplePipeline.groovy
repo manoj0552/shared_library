@@ -21,7 +21,7 @@ def call(body){
           stage('s3_upload'){
           sh pwd
            withAWS(credentials:'AKIAJ7D5XIXGBK2GHWDA')
-           s3Upload(file:'helloworld.war',bucket:'warfiles-sample',path:'./pipeline-code/shared_library/share_Pipeline/target/helloworld.war')
+           s3Upload(file:'helloworld.war',bucket:'warfiles-sample',path:'$pwd/target/helloworld.war')
 
           }
 
