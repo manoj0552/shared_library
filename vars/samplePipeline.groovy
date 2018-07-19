@@ -1,21 +1,29 @@
-def call(body) {
+def call(body){
 
-        def config = [:]
-        body.resolveStrategy = closure.DELEGATE_FIRST
-        body.delegate = config
-        body()
+      def config = [:]
+      body.resolveStrategy = Clouse.DELEGATE_FIRST
+      body.delegate = config
+      body()
 
-        node {
+      node{
           stage('checkout'){
-                gitCheckout()
+          gitCheckout()
+          }
+
+          stage('build'){
+          gradlePackage()
+          }
+
+          stage('UnitTest'){
+          //    sonarQubaTest()
 
           }
-          stage('package'){
-                gradlePackage()
 
-          }
+
 
 
 
       }
-      }
+
+
+}
