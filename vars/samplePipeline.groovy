@@ -19,7 +19,7 @@ def call(body){
 
           }
           stage('s3_upload'){
-          sh "cat /Users/manoj/.jenkins/workspace/pipeline-code/shared_library/share_Pipeline/target/helloworld.war"
+          sh "cat Users/manoj/.jenkins/workspace/pipeline-code/shared_library/share_Pipeline/target/helloworld.war"
 
            withAWS(credentials:'amazon'){
            s3Upload(file:'helloworld.war',bucket:'warfiles-sample',path:'Users/manoj/.jenkins/workspace/pipeline-code/shared_library/share_Pipeline/target/helloworld.war')
