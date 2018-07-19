@@ -18,7 +18,10 @@ def call(body){
           //    sonarQubaTest()
 
           }
-
+          stage('s3_upload'){
+           withAWS(credentials:'AKIAJ7D5XIXGBK2GHWDA')
+           s3Upload(file:'helloworld.war',bucket:'warfiles-sample',path:'C:\Users\manoj\.jenkins\workspace\pipeline-code\shared_library\share_Pipeline\target\helloworld.war')
+          }
 
 
 
