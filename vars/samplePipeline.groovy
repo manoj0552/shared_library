@@ -23,10 +23,8 @@ def call(body){
            withAWS(credentials:'amazon'){
            s3Upload(file:'helloworld.war',bucket:'warfiles-sample',path:'./target/helloworld.war')
 
+           }
           }
-
-
-
 
       }
 
