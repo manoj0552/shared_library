@@ -21,7 +21,7 @@ def call(body){
           stage('s3_upload'){
 
 
-           withAWS(credentials:'amazon'){
+           withAWS(credentials:'amazon',region:'us-east-2'){
            s3Upload(file:'./target/helloworld.war',bucket:'warfiles-sample',path:'helloworld.war')
 
            }
